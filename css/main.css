@@ -1,0 +1,725 @@
+/* my framework*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Padauk', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 27, 52, .5);
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.visable-xs,
+.visable-sm,
+.visable-md,
+.visable-lg {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.h1 {
+    font-size: 2em;
+}
+
+.col {
+    color: #504848;
+}
+
+.hed {
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    display: block;
+    color: #504848;
+    font-size: 34px !important;
+}
+
+.hed::before {
+    content: "";
+    width: 50px !important;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border-bottom: 3px solid #504848;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-paragraph {
+    line-height: 1.8;
+    font-size: 22px;
+}
+
+.classic-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* my framework*/
+
+
+/*start navbar*/
+
+.navbar {
+    background: rgba(6, 32, 57, 1);
+    padding: 15px 0 3px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+}
+
+.navbar #bars {
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    top: 17px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar .brand {
+    width: 50%;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ecf0f1;
+    position: relative;
+    top: -5px;
+    text-transform: capitalize;
+}
+
+.navbar .links {
+    width: 50%;
+}
+
+.navbar .links .classic-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid white;
+}
+
+.navbar .links .classic-list li:hover,
+.navbar .links .classic-list li:active {
+    color: sandybrown;
+    border-bottom: 1px solid sandybrown;
+}
+
+@media (max-width:767px) {
+    .navbar .brand {
+        width: max-content;
+        float: none;
+        margin: auto;
+    }
+    .navbar .links {
+        width: 100% !important;
+    }
+    .navbar .links .classic-list {
+        float: left;
+        width: 100%;
+        display: none;
+    }
+    .navbar .links .classic-list li {
+        display: block !important;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .navbar .brand {
+        width: max-content;
+        float: none;
+        margin: auto;
+    }
+    .navbar .links {
+        width: 100% !important;
+    }
+    .navbar .links .classic-list {
+        float: left;
+        width: 100%;
+        display: none;
+    }
+    .navbar .links .classic-list li {
+        display: block !important;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+/* end navbar*/
+
+
+/*start header*/
+
+.header {
+    position: relative;
+    height: 500px;
+    background: url(../pic/Roccat-Sova-gaming-lap-desk-featured.jpg) no-repeat top center;
+    background-size: cover;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.header .plan {
+    border: 4px solid rgb(255, 255, 255);
+    width: 49%;
+    float: left;
+    padding: 20px;
+    font-size: 22px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.header .plan:first-of-type {
+    margin-right: 2%;
+}
+
+.header .adds {
+    border: 4px solid #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+
+/*end header*/
+
+
+/*start features*/
+
+.features {
+    overflow: hidden;
+    padding-top: 40px;
+    color: #504848;
+}
+
+.features .container {
+    border-bottom: 3px solid #8888;
+    padding-bottom: 50px;
+}
+
+.features .h1 {
+    margin-bottom: 10px;
+    position: relative;
+    left: 0%;
+}
+
+.features .h1::before {
+    content: "";
+    width: 38px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border-bottom: 3px solid #504848;
+}
+
+.features .feat {
+    width: 33.3333333%;
+    padding: 30px 30px 0 0;
+}
+
+.features .feat p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.features .feat {
+    text-align: center;
+}
+
+.features .feat h2 {
+    padding-bottom: 20px;
+}
+
+
+/*start about us*/
+
+.about-us {
+    padding-top: 30px;
+}
+
+.about-us .hed::before {
+    width: 85px !important;
+}
+
+.about-us .container {
+    border-bottom: 2px solid #888888;
+    padding-bottom: 50px;
+}
+
+.about-us h2 {
+    margin: 20px 0;
+}
+
+.about-us p {
+    text-align: justify;
+}
+
+
+/*end about us*/
+
+
+/*start our works*/
+
+.our-works {
+    padding: 40px 0;
+    width: 100%;
+}
+
+.our-works button {
+    display: block;
+    margin: auto;
+    background: #2980b9;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .our-works .img {
+        height: 250px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .our-works>button {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .our-works .img {
+        width: 50%;
+        height: 250px;
+    }
+}
+
+@media (min-width:992px) {
+    .our-works .img {
+        width: 33.33%;
+        height: 250px;
+    }
+}
+
+@media(min-width:1200px) {
+    .our-works .img {
+        width: 25%;
+        height: 250px;
+    }
+}
+
+
+/*end our works*/
+
+
+/*start pricing plan*/
+
+.our-pricing {
+    padding: 50px 0;
+    margin-top: 40px;
+    background: #021b34;
+    ;
+}
+
+.our-pricing h2 {
+    color: white !important;
+}
+
+.our-pricing h2::before {
+    border-bottom: 2px solid #fff !important;
+}
+
+.our-pricing .plan {
+    padding: 40px 0 50px 0;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.our-pricing .plan h3 {
+    font-size: 28px;
+    color: #ff5757;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.our-pricing .plan span {
+    display: inline-block;
+    color: #25e914;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.our-pricing .plan ul {
+    line-height: 1.9;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (max-width:767px) {
+    .our-pricing .plan {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .our-pricing h2 {
+        color: white !important;
+        border-bottom: 2px solid #fff !important;
+    }
+}
+
+@media (min-width:768px) {
+    .our-pricing .plan {
+        width: 32.3333%;
+        margin-right: 1%;
+    }
+}
+
+@media (min-width:992px) {
+    .our-pricing .plan {
+        width: 32.333%;
+        margin-right: 1%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(min-width:1200px) {
+    .our-pricing .plan {
+        width: 32.3333%;
+        margin-right: 1%;
+    }
+}
+
+
+/*end  pricing plan*/
+
+
+/*start they-say*/
+
+.they-say {
+    padding: 40px 0;
+}
+
+.they-say .hed::before {
+    width: 75px !important;
+}
+
+.they-say .person {
+    padding: 20px;
+    border: 1px solid rgb(104, 101, 101);
+    background: #021b34;
+    text-align: center;
+    min-height: 200px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.they-say .person img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.they-say .person h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffd7d7;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    .they-say .person {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 2px;
+    }
+}
+
+@media (min-width:768px) {
+    .they-say .person {
+        width: 100%;
+        margin-left: 0;
+    }
+    @media (min-width:992px) {
+        .they-say .person:first-of-type {
+            width: 100%;
+        }
+        .they-say .person:not(:first-of-type) {
+            width: 50%;
+        }
+    }
+    @media(min-width:1200px) {
+        .they-say .person:first-of-type {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .they-say .person:not(:first-of-type) {
+            width: 50%;
+        }
+    }
+}
+
+
+/*end they-say*/
+
+
+/*start information*/
+
+.information {
+    padding: 50px 0;
+    background: #021b34;
+    color: white;
+}
+
+.information h2 {
+    color: white!important;
+}
+
+.information h2::before {
+    width: 110px !important;
+    border-bottom: 2px solid white;
+}
+
+.information ul li {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 0;
+    width: 140px;
+    background: #404a6f;
+    text-align: center;
+    border-bottom: 2px solid #a09eb7;
+    margin: 0;
+}
+
+.information ul li.active,
+.information ul li:hover,
+.information ul li:active {
+    border-bottom: none;
+    background: #4636ff;
+}
+
+.information .tabs>div {
+    background: #0b091f;
+    min-height: 400px;
+    padding: 20px;
+    display: none;
+}
+
+.information .tabs .active {
+    display: block;
+}
+
+@media (max-width:767px) {
+    .information ul li {
+        display: block;
+        width: 100%;
+        border: none!important;
+    }
+}
+
+
+/*end information*/
+
+
+/*start footer*/
+
+.footer {
+    padding: 20px 0;
+    background: #151517;
+}
+
+.footer .copy {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/*end footer*/
+
+.to-top {
+    position: fixed;
+    z-index: 9999999999999999;
+    right: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #e67e22;
+    bottom: 100px;
+    display: none;
+}
+
+@media (max-width:767px) {
+    .to-top {
+        right: 5px;
+    }
+}
+
+@media (max-width:767px) {}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {}
+
+@media(min-width:1200px) {}
+
+@media (max-width:767px) {
+    /*mobile & tablete role*/
+    .header .plan {
+        float: none;
+        width: 100%;
+    }
+    .header h1 {
+        padding-top: 40px;
+    }
+    .visable-xs {
+        display: block !important;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .res-paragraph {
+        font-size: 20px;
+        text-align: center;
+    }
+    .features .feat {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .hed {
+        text-align: center;
+        width: max-content;
+        margin: auto !important;
+        margin-bottom: 20px !important;
+        border-bottom: 2px solid #333;
+    }
+    .hed::before {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    /*small screen rules*/
+    .container {
+        width: 750px;
+    }
+    .visable-sm {
+        display: block !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+    .features .feat:first-of-type {
+        width: 100%;
+        text-align: center;
+    }
+    .features .feat:not(:first-of-type) {
+        width: 50%;
+    }
+}
+
+@media (min-width:992px) {
+    /*mediam screen rules*/
+    .container {
+        width: 970px;
+    }
+    .visable-md {
+        display: block !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+    .features .feat {
+        width: 33.333% !important;
+    }
+}
+
+@media(min-width:1200px) {
+    /*large screen rules*/
+    .container {
+        width: 1170px;
+    }
+    .visable-lg {
+        display: block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}
